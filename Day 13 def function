@@ -1,0 +1,7 @@
+def fix_spelling(name):
+    if name == 'twittr':
+        print(name.replace(name,'twitter'))
+    else:
+        print(name)
+
+fix_spelling('twitter')
