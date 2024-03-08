@@ -1,0 +1,14 @@
+any() : 하나라도 True인게 있으면 True
+all() : 모두 True여야 True 반환
+
+if __name__ == '__main__':
+    string = input()
+    print (any(c.isalnum() for c in string))
+    print (any(c.isalpha() for c in string))
+    print (any(c.isdigit() for c in string))
+    print (any(c.islower() for c in string))
+    print (any(c.isupper() for c in string))
+
+x for x in range(10):
+> x 모두 append된 리스트 값 출력
+> [0,1,2,3,4,5,6,7,8,9]
