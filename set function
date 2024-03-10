@@ -1,0 +1,13 @@
+# set 활용해보기
+- set은 중복 제거된 {} 추출
+a=['a','b','c','c','d']
+b=['b','c','e']
+c=[]
+
+def find_common(a,b):
+    for i in a:
+        if i in b:
+          c.append(i)
+    return list(set(c))
+
+print(find_common(a,b))
