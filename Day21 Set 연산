@@ -1,3 +1,4 @@
+# set는 연산(operator)이 가능 
 def average(array):
     # your code goes here
     return sum(set(array))/len(set(array))
