@@ -1,0 +1,16 @@
+M = int(input())
+a = set(input().split())
+
+N = int(input())
+b = set(input().split())
+#차집합
+c = a.difference(b)
+d = b.difference(a)
+#합집합
+e = c.union(d)
+
+#교집합 > intersection
+
+#\n = 행 띄우기
+#a.join = a 간격 두고 하나의 string 합치기
+print('\n'.join(sorted(e, key=int)))
