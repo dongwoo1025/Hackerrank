@@ -1,0 +1,19 @@
+def group_anagrams(strs):
+    # Your code here
+    groups={}
+    for i in strs:
+        key=tuple(sorted(i))
+        if key not in groups:
+            groups[key]=[]
+        groups[key].append(i)
+    return list(groups.values())
+    pass
+
+# Test the function
+test_strings = ["eat", "tea", "tan", "ate", "nat", "bat"]
+result = group_anagrams(test_strings)
+print(result)
+
+# Output
+groups = {('a', 'e', 't'): ['eat', 'tea', 'ate'], ('a', 'n', 't'): ['tan', 'nat'], ('a', 'b', 't'): ['bat']}
+print(result) = [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
